@@ -1,0 +1,20 @@
+{
+  "name": "Angers",
+  "short_name": "Angers",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0A2540",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "fr",
+  "orientation": "any",
+  "scope": "/",
+  "description": "Services géotechniques professionnels à Angers, France. Études de sol, essais et conseil technique.",
+  "id": "/angers-4428"
+}

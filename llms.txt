@@ -1,0 +1,55 @@
+# Angers
+
+> Geotechnical engineering company in France, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Amelioration](https://angers.geotechnique.sbs/amelioration/)
+- [Analyse Damplification Sismique](https://angers.geotechnique.sbs/analyse-damplification-sismique/)
+- [Analyse Geotechnique Tunnels Sols](https://angers.geotechnique.sbs/analyse-geotechnique-tunnels-sols/)
+- [Analyse Lerosion Sols](https://angers.geotechnique.sbs/analyse-lerosion-sols/)
+- [Analyse Stabilite Pentes](https://angers.geotechnique.sbs/analyse-stabilite-pentes/)
+- [Analyse Tassement Differentiel](https://angers.geotechnique.sbs/analyse-tassement-differentiel/)
+- [Au Dilatometre Plat](https://angers.geotechnique.sbs/au-dilatometre-plat/)
+- [Caracterisation Sols Residuels](https://angers.geotechnique.sbs/caracterisation-sols-residuels/)
+- [Cisaillement Au Scissometre Chantier](https://angers.geotechnique.sbs/cisaillement-au-scissometre-chantier/)
+- [Classification Sols](https://angers.geotechnique.sbs/classification-sols/)
+- [Conception Chaussee Plate Forme](https://angers.geotechnique.sbs/conception-chaussee-plate-forme/)
+- [Conception Chaussees Rigides](https://angers.geotechnique.sbs/conception-chaussees-rigides/)
+- [Conception Chaussees Souples](https://angers.geotechnique.sbs/conception-chaussees-souples/)
+- [Conception Deep Soil Mixing](https://angers.geotechnique.sbs/conception-deep-soil-mixing/)
+- [Conception Disolation Sismique A](https://angers.geotechnique.sbs/conception-disolation-sismique-a/)
+- [Conception Drains Verticaux Prefabriques](https://angers.geotechnique.sbs/conception-drains-verticaux-prefabriques/)
+- [Conception Fondations Parasismiques](https://angers.geotechnique.sbs/conception-fondations-parasismiques/)
+- [Conception Fondations Pieux](https://angers.geotechnique.sbs/conception-fondations-pieux/)
+- [Conception Fondations Superficielles](https://angers.geotechnique.sbs/conception-fondations-superficielles/)
+- [Conception Micropieux](https://angers.geotechnique.sbs/conception-micropieux/)
+- [Conception Murs Soutenement](https://angers.geotechnique.sbs/conception-murs-soutenement/)
+- [Conception Plate Forme Routiere](https://angers.geotechnique.sbs/conception-plate-forme-routiere/)
+- [Conception Rideaux Palplanches](https://angers.geotechnique.sbs/conception-rideaux-palplanches/)
+- [Densite Site](https://angers.geotechnique.sbs/densite-site/)
+- [Essais In Situ](https://angers.geotechnique.sbs/essais-in-situ/)
+- [Etude Mecanique Sols](https://angers.geotechnique.sbs/etude-mecanique-sols/)
+- [Evaluation Sols Affaissables](https://angers.geotechnique.sbs/evaluation-sols-affaissables/)
+- [Excavations Souterraines](https://angers.geotechnique.sbs/excavations-souterraines/)
+- [Exploration](https://angers.geotechnique.sbs/exploration/)
+- [Fondations](https://angers.geotechnique.sbs/fondations/)
+- [Geophysique](https://angers.geotechnique.sbs/geophysique/)
+- [Geotechnique Routiere](https://angers.geotechnique.sbs/geotechnique-routiere/)
+- [Investigation](https://angers.geotechnique.sbs/investigation/)
+- [Laboratoire](https://angers.geotechnique.sbs/laboratoire/)
+- [Limites Datterberg](https://angers.geotechnique.sbs/limites-datterberg/)
+- [Microtremblements Hvsr](https://angers.geotechnique.sbs/microtremblements-hvsr/)
+- [Pentes Et Murs](https://angers.geotechnique.sbs/pentes-et-murs/)
+- [Pressiometrique Menard](https://angers.geotechnique.sbs/pressiometrique-menard/)
+- [Puits Dexploration](https://angers.geotechnique.sbs/puits-dexploration/)
+- [Sismique](https://angers.geotechnique.sbs/sismique/)
+- [Standard Penetration Test](https://angers.geotechnique.sbs/standard-penetration-test/)
+- [Tomographie Sismique](https://angers.geotechnique.sbs/tomographie-sismique/)
+- [Vitesse Ondes Cisaillement](https://angers.geotechnique.sbs/vitesse-ondes-cisaillement/)
+
+## Contact
+- Website: https://angers.geotechnique.sbs/
+
+## About
+This page provides information about geotechnical engineering services available in France.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
