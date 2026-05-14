@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#370617) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Doutes fréquents</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>Quelle est la différence entre une chaussée souple et une chaussée rigide à Angers ?</summary><p>Une chaussée souple utilise des couches bitumineuses et des matériaux granulaires non traités, tandis qu’une chaussée rigide repose sur une dalle en béton de ciment. À Angers, le choix dépend du trafic et de la portance de la plateforme. Les sols argileux locaux favorisent souvent la solution souple, car elle tolère mieux les tassements différentiels.</p></details><details><summary>Quels essais géotechniques sont nécessaires avant de dimensionner une chaussée souple à Angers ?</summary><p>Il faut au minimum un essai à la plaque pour mesurer le module EV2, un Proctor modifié pour la densification optimale, et un CBR immersion pour évaluer la portance sous l’eau. Dans les zones d’alluvions de la Maine, un pénétromètre dynamique complète la reconnaissance pour détecter les hétérogénéités.</p></details><details><summary>Combien coûte une étude de conception de chaussée souple à Angers ?</summary><p>Le coût d’une étude complète, incluant sondages, essais en laboratoire et rapport de dimensionnement, se situe généralement entre 1 350 et 4 740 euros selon la complexité du site et le nombre d’essais nécessaires. Ce tarif couvre la reconnaissance de sol et le calcul de structure.</p></details><details><summary>Quelle épaisseur minimale pour une chaussée souple sur un parking à Angers ?</summary><p>Pour un parking de véhicules légers, l’épaisseur totale est souvent de 30 à 40 cm, comprenant une couche de forme de 20 cm en GNT 0/31,5 et un revêtement bitumineux de 6 à 8 cm. Si le sol est argileux, on ajoute parfois une couche de confinement en grave-ciment.</p></details></div></section>
+<details><summary>Quelle est la différence entre une chaussée souple et une chaussée rigide à Angers ?</summary><p>Une chaussée souple utilise des couches bitumineuses et des matériaux granulaires non traités, tandis qu’une chaussée rigide repose sur une dalle en béton de ciment. À Angers, le choix dépend du trafic et de la portance de la plateforme. Les sols argileux locaux favorisent souvent la solution souple, car elle tolère mieux les tassements différentiels.</p></details><details><summary>Quels essais géotechniques sont nécessaires avant de dimensionner une chaussée souple à Angers ?</summary><p>Il faut au minimum un essai à la plaque pour mesurer le module EV2, un Proctor modifié pour la densification optimale, et un CBR immersion pour évaluer la portance sous l’eau. Dans les zones d’alluvions de la Maine, un pénétromètre dynamique complète la reconnaissance pour détecter les hétérogénéités.</p></details><details><summary>Combien coûte une étude de conception de chaussée souple à Angers ?</summary><p>Le coût d’une étude complète, incluant sondages, essais en <a href="/laboratoire/">laboratoire</a> et rapport de dimensionnement, se situe généralement entre 1 350 et 4 740 euros selon la complexité du site et le nombre d’essais nécessaires. Ce tarif couvre la reconnaissance de sol et le calcul de structure.</p></details><details><summary>Quelle épaisseur minimale pour une chaussée souple sur un parking à Angers ?</summary><p>Pour un parking de véhicules légers, l’épaisseur totale est souvent de 30 à 40 cm, comprenant une couche de forme de 20 cm en GNT 0/31,5 et un revêtement bitumineux de 6 à 8 cm. Si le sol est argileux, on ajoute parfois une couche de confinement en grave-ciment.</p></details></div></section>
 
 
 

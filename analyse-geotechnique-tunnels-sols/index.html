@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#370617) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Doutes fréquents</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>Quel est le coût d’une analyse géotechnique pour tunnels en sols mous à Angers ?</summary><p>Pour un linéaire de 200 à 500 mètres de tunnel, le budget se situe entre 3 620 € et 15 720 € selon le nombre de sondages, les essais en place et la modélisation. Ce montant inclut la reconnaissance, les essais de laboratoire et le rapport géotechnique G2. Un devis précis est établi après visite du site.</p></details><details><summary>Quelle différence entre un essai pressiométrique et un essai SPT pour un tunnel angevin ?</summary><p>Le pressiomètre donne directement le module de déformation du sol en place, ce qui est crucial pour calculer les tassements autour du tunnel. Le SPT fournit un indice de résistance dynamique mais ne mesure pas la déformabilité. Dans les sols mous d’Angers, le pressiomètre est plus fiable pour le dimensionnement du revêtement.</p></details><details><summary>Combien de temps dure une campagne de reconnaissance pour un tunnel de 300 mètres ?</summary><p>Comptez trois à quatre semaines pour les sondages et les essais en place, puis deux semaines pour les essais de laboratoire et la modélisation. Le rapport G2 est livré sous six semaines après le début de la campagne.</p></details><details><summary>Quelles zones d’Angers présentent les sols les plus problématiques pour un tunnel ?</summary><p>Les rives de la Maine, le quartier de la gare et le secteur de la Doutre présentent des alluvions tourbeuses très compressibles. Les anciens bras de la Loire sous le centre-ville créent des hétérogénéités latérales qui compliquent le creusement. C’est là que l’analyse géotechnique pour tunnels en sols mous est la plus indispensable.</p></details></div></section>
+<details><summary>Quel est le coût d’une analyse géotechnique pour tunnels en sols mous à Angers ?</summary><p>Pour un linéaire de 200 à 500 mètres de tunnel, le budget se situe entre 3 620 € et 15 720 € selon le nombre de sondages, les essais en place et la modélisation. Ce montant inclut la reconnaissance, les essais de <a href="/laboratoire/">laboratoire</a> et le rapport géotechnique G2. Un devis précis est établi après visite du site.</p></details><details><summary>Quelle différence entre un essai pressiométrique et un essai SPT pour un tunnel angevin ?</summary><p>Le pressiomètre donne directement le module de déformation du sol en place, ce qui est crucial pour calculer les tassements autour du tunnel. Le SPT fournit un indice de résistance dynamique mais ne mesure pas la déformabilité. Dans les sols mous d’Angers, le pressiomètre est plus fiable pour le dimensionnement du revêtement.</p></details><details><summary>Combien de temps dure une campagne de reconnaissance pour un tunnel de 300 mètres ?</summary><p>Comptez trois à quatre semaines pour les sondages et les essais en place, puis deux semaines pour les essais de laboratoire et la modélisation. Le rapport G2 est livré sous six semaines après le début de la campagne.</p></details><details><summary>Quelles zones d’Angers présentent les sols les plus problématiques pour un tunnel ?</summary><p>Les rives de la Maine, le quartier de la gare et le secteur de la Doutre présentent des alluvions tourbeuses très compressibles. Les anciens bras de la Loire sous le centre-ville créent des hétérogénéités latérales qui compliquent le creusement. C’est là que l’analyse géotechnique pour tunnels en sols mous est la plus indispensable.</p></details></div></section>
 
 
 

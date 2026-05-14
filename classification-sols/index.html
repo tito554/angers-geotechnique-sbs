@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#370617) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Doutes fréquents</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>Quelle est la différence entre la classification USCS et AASHTO pour les sols d'Angers ?</summary><p>L'USCS (Unified Soil Classification System) se base sur la granulométrie et la plasticité pour classer les sols en groupes (CL, CH, SM, etc.). L'AASHTO (American Association of State Highway and Transportation Officials) classe les sols en fonction de leur comportement comme matériau de chaussée, avec un indice de groupe (IG). Pour les limons angevins, l'USCS les classe CL ou ML ; l'AASHTO les place souvent en groupe A-4 ou A-6 avec IG entre 4 et 12. Les deux classifications sont complémentaires : l'USCS sert au dimensionnement des fondations, l'AASHTO au calcul des épaisseurs de chaussée.</p></details><details><summary>Quel est le coût d'une classification des sols USCS/AASHTO à Angers ?</summary><p>Le tarif pour une classification complète (granulométrie + Atterberg + rapport) se situe entre 60 € et 100 € par échantillon, selon le nombre d'essais et les délais. Pour un projet de maison individuelle avec 2 à 3 prélèvements, comptez entre 180 € et 300 €. Ce prix inclut les essais en laboratoire, la courbe granulométrique, les <a href="../limites-datterberg/" data-interlink="1">limites d'Atterberg</a> et le rapport de classification. Les frais de déplacement sur le site angevin sont facturés en sus.</p></details><details><summary>Faut-il une classification USCS pour tous les types de construction à Angers ?</summary><p>Oui, pour toute construction neuve (maison, immeuble, bâtiment industriel) ou pour un projet de voirie, la classification USCS/AASHTO est indispensable. Le Plan Local d'Urbanisme (PLU) d'Angers et le règlement de la Maine-et-Loire imposent une étude géotechnique préalable pour les permis de construire. Sans classification, le bureau d'études ne peut pas calculer la capacité portante ni le tassement. Pour les extensions ou surélévations, elle est fortement recommandée car le sol peut avoir été modifié par les constructions antérieures.</p></details></div></section>
+<details><summary>Quelle est la différence entre la classification USCS et AASHTO pour les sols d'Angers ?</summary><p>L'USCS (Unified Soil Classification System) se base sur la granulométrie et la plasticité pour classer les sols en groupes (CL, CH, SM, etc.). L'AASHTO (American Association of State Highway and Transportation Officials) classe les sols en fonction de leur comportement comme matériau de chaussée, avec un indice de groupe (IG). Pour les limons angevins, l'USCS les classe CL ou ML ; l'AASHTO les place souvent en groupe A-4 ou A-6 avec IG entre 4 et 12. Les deux classifications sont complémentaires : l'USCS sert au dimensionnement des <a href="/fondations/">fondations</a>, l'AASHTO au calcul des épaisseurs de chaussée.</p></details><details><summary>Quel est le coût d'une classification des sols USCS/AASHTO à Angers ?</summary><p>Le tarif pour une classification complète (granulométrie + Atterberg + rapport) se situe entre 60 € et 100 € par échantillon, selon le nombre d'essais et les délais. Pour un projet de maison individuelle avec 2 à 3 prélèvements, comptez entre 180 € et 300 €. Ce prix inclut les essais en laboratoire, la courbe granulométrique, les <a href="../limites-datterberg/" data-interlink="1">limites d'Atterberg</a> et le rapport de classification. Les frais de déplacement sur le site angevin sont facturés en sus.</p></details><details><summary>Faut-il une classification USCS pour tous les types de construction à Angers ?</summary><p>Oui, pour toute construction neuve (maison, immeuble, bâtiment industriel) ou pour un projet de voirie, la classification USCS/AASHTO est indispensable. Le Plan Local d'Urbanisme (PLU) d'Angers et le règlement de la Maine-et-Loire imposent une étude géotechnique préalable pour les permis de construire. Sans classification, le bureau d'études ne peut pas calculer la capacité portante ni le tassement. Pour les extensions ou surélévations, elle est fortement recommandée car le sol peut avoir été modifié par les constructions antérieures.</p></details></div></section>
 
 
 

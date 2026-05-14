@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#370617) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Doutes fréquents</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>Quels sont les paramètres clés pour dimensionner une plate-forme routière à Angers ?</summary><p>L'indice CBR, le module de réaction k, la teneur en eau naturelle et la classe GTR (A, B ou C) sont déterminants. À Angers, la variation latérale des sols rend obligatoire un sondage tous les 100 mètres linéaires.</p></details><details><summary>Combien coûte une étude de plate-forme routière dans la région ?</summary><p>Le coût d'une étude complète (G1 + dimensionnement) se situe entre 1 090 € et 2 600 € selon la longueur de la voie et la complexité du site. Ce forfait inclut les essais de laboratoire.</p></details><details><summary>Quelle norme appliquer pour la conception de plate-forme routière en France ?</summary><p>La référence est le guide technique GTR (SETRA-LCPC) pour le choix des matériaux, complété par l'Eurocode 7 pour la vérification des états limites. Les essais suivent les normes NF P 94-093 et NF P 94-078.</p></details><details><summary>Faut-il traiter les argiles gonflantes avant la mise en œuvre de la plate-forme ?</summary><p>Oui, surtout dans les secteurs comme la Baumette ou les Ponts-de-Cé. Un traitement à la chaux vive (2 à 4 % en masse) réduit le gonflement et améliore la portance. L'essai au bleu de méthylène (NF P 94-068) confirme la sensibilité de l'argile.</p></details></div></section>
+<details><summary>Quels sont les paramètres clés pour dimensionner une plate-forme routière à Angers ?</summary><p>L'indice CBR, le module de réaction k, la teneur en eau naturelle et la classe GTR (A, B ou C) sont déterminants. À Angers, la variation latérale des sols rend obligatoire un sondage tous les 100 mètres linéaires.</p></details><details><summary>Combien coûte une étude de plate-forme routière dans la région ?</summary><p>Le coût d'une étude complète (G1 + dimensionnement) se situe entre 1 090 € et 2 600 € selon la longueur de la voie et la complexité du site. Ce forfait inclut les essais de <a href="/laboratoire/">laboratoire</a>.</p></details><details><summary>Quelle norme appliquer pour la conception de plate-forme routière en France ?</summary><p>La référence est le guide technique GTR (SETRA-LCPC) pour le choix des matériaux, complété par l'Eurocode 7 pour la vérification des états limites. Les essais suivent les normes NF P 94-093 et NF P 94-078.</p></details><details><summary>Faut-il traiter les argiles gonflantes avant la mise en œuvre de la plate-forme ?</summary><p>Oui, surtout dans les secteurs comme la Baumette ou les Ponts-de-Cé. Un traitement à la chaux vive (2 à 4 % en masse) réduit le gonflement et améliore la portance. L'essai au bleu de méthylène (NF P 94-068) confirme la sensibilité de l'argile.</p></details></div></section>
 
 
 

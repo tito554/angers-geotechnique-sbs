@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#370617) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -189,7 +225,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #EA580C;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#EA580C;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Paramètre</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Valeur typique</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Indice de plasticité (IP)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">8 - 35 %</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Cohésion résiduelle (cu)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">5 - 40 kPa</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Angle de frottement interne (φ)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">25 - 35 degrés</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Teneur en eau naturelle (w)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">12 - 28 %</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Densité sèche (γd)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">14 - 18 kN/m³</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Module de Young (E)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">15 - 60 MPa</td></tr></tbody></table></div></div></section>
 
-<section class="block"><div class="container"><h2>Doutes fréquents</h2><details><summary>Qu'est-ce qu'un sol résiduel et en quoi diffère-t-il d'un sol transporté?</summary><p>Un sol résiduel est formé sur place par l'altération de la roche mère (ici le granite armoricain). Il conserve souvent la structure de la roche d'origine. Contrairement aux sols transportés (alluvions, colluvions), il ne subit pas de tri granulométrique et présente une forte hétérogénéité verticale.</p></details><details><summary>Quels paramètres sont prioritaires pour dimensionner des fondations sur sols résiduels à Angers?</summary><p>La cohésion résiduelle, l'angle de frottement et l'indice de plasticité sont clés. Il faut aussi évaluer le potentiel de gonflement des argiles smectiques présentes dans les altérites. Une analyse minéralogique préalable est recommandée pour éviter les surprises.</p></details><details><summary>Quel est le coût d'une caractérisation de sols résiduels à Angers?</summary><p>Le budget se situe entre 850 € et 2 510 € selon la profondeur d'investigation, le nombre d'essais et la complexité du site. Ce tarif inclut le prélèvement, les analyses en laboratoire et le rapport géotechnique.</p></details><details><summary>Quels risques spécifiques aux sols résiduels dois-je anticiper pour mon chantier à Angers?</summary><p>Les principaux risques sont le gonflement des argiles, les tassements différentiels et la présence de poches de matériaux altérés non homogènes. Un suivi des teneurs en eau et une reconnaissance par puits ou carottages sont souvent nécessaires.</p></details><details><summary>Comment se déroule une campagne de caractérisation sur un terrain angevin?</summary><p>Nous réalisons d'abord une reconnaissance de surface et des sondages à la tarière ou au carottier. Les échantillons intacts sont prélevés et envoyés au laboratoire pour analyses granulométrique, minéralogique et mécanique. Le rapport final fournit les paramètres de calcul pour le bureau d'études.</p></details></div></section>
+<section class="block"><div class="container"><h2>Doutes fréquents</h2><details><summary>Qu'est-ce qu'un sol résiduel et en quoi diffère-t-il d'un sol transporté?</summary><p>Un sol résiduel est formé sur place par l'altération de la roche mère (ici le granite armoricain). Il conserve souvent la structure de la roche d'origine. Contrairement aux sols transportés (alluvions, colluvions), il ne subit pas de tri granulométrique et présente une forte hétérogénéité verticale.</p></details><details><summary>Quels paramètres sont prioritaires pour dimensionner des fondations sur sols résiduels à Angers?</summary><p>La cohésion résiduelle, l'angle de frottement et l'indice de plasticité sont clés. Il faut aussi évaluer le potentiel de gonflement des argiles smectiques présentes dans les altérites. Une analyse minéralogique préalable est recommandée pour éviter les surprises.</p></details><details><summary>Quel est le coût d'une caractérisation de sols résiduels à Angers?</summary><p>Le budget se situe entre 850 € et 2 510 € selon la profondeur d'investigation, le nombre d'essais et la complexité du site. Ce tarif inclut le prélèvement, les analyses en <a href="/laboratoire/">laboratoire</a> et le rapport géotechnique.</p></details><details><summary>Quels risques spécifiques aux sols résiduels dois-je anticiper pour mon chantier à Angers?</summary><p>Les principaux risques sont le gonflement des argiles, les tassements différentiels et la présence de poches de matériaux altérés non homogènes. Un suivi des teneurs en eau et une reconnaissance par puits ou carottages sont souvent nécessaires.</p></details><details><summary>Comment se déroule une campagne de caractérisation sur un terrain angevin?</summary><p>Nous réalisons d'abord une reconnaissance de surface et des sondages à la tarière ou au carottier. Les échantillons intacts sont prélevés et envoyés au laboratoire pour analyses granulométrique, minéralogique et mécanique. Le rapport final fournit les paramètres de calcul pour le bureau d'études.</p></details></div></section>
 
 
 

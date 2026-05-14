@@ -114,6 +114,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#370617) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -165,7 +201,7 @@ header.hero, .hero { position: relative !important; }
 
 
 
-<section class="block"><div class="container"><h2>Méthodologie et portée</h2><div>La vallée de la Maine présente des alluvions sablo-argileuses sur une épaisseur de 5 à 15 mètres, reposant sur le substratum schisteux. Cette configuration engendre un contraste d'impédance qui amplifie les mouvements sismiques dans la gamme 2-6 Hz, précisément la plage critique pour les bâtiments de 5 à 15 étages. Notre analyse d'amplification sismique à Angers suit le référentiel Eurocode 8 (EN 1998-1:2004) pour classer le site en catégorie B, C ou D selon la vitesse des ondes de cisaillement. Les étapes principales sont : <ul><li>Mesures de bruit de fond par HVSR pour détecter la fréquence fondamentale du site ;</li><li>Profil sismique MASW pour déterminer le VS30 sur 30 mètres de profondeur ;</li><li>Modélisation numérique 1D (SHAKE, STRATA) des colonnes de sol représentatives.</li></ul> Ces données permettent d'ajuster le spectre de réponse au droit de chaque projet, une étape indispensable pour les cimentations sismiques adaptées au contexte local.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Image technique — Angers</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Considérations locales</h2><p>Un projet de résidence de 8 étages avenue Jeanne d'Arc, à deux pas de la Maine, a récemment mis en lumière l'importance de l'analyse d'amplification sismique à Angers. Sans étude préalable, le dimensionnement initial sous-estimait l'accélération en surface de près de 30 %. L'analyse a révélé une fréquence de résonance à 3,2 Hz, coïncidant avec la fréquence propre du bâtiment. Le recalcul a nécessité un renforcement des voiles et des fondations, soit un surcoût maîtrisé de 5 % du gros œuvre, bien inférieur au risque de désordres structurels en cas de séisme modéré.</p></div></section>
+<section class="block"><div class="container"><h2>Méthodologie et portée</h2><div>La vallée de la Maine présente des alluvions sablo-argileuses sur une épaisseur de 5 à 15 mètres, reposant sur le substratum schisteux. Cette configuration engendre un contraste d'impédance qui amplifie les mouvements sismiques dans la gamme 2-6 Hz, précisément la plage critique pour les bâtiments de 5 à 15 étages. Notre analyse d'amplification sismique à Angers suit le référentiel Eurocode 8 (EN 1998-1:2004) pour classer le site en catégorie B, C ou D selon la vitesse des ondes de cisaillement. Les étapes principales sont : <ul><li>Mesures de bruit de fond par HVSR pour détecter la fréquence fondamentale du site ;</li><li>Profil sismique MASW pour déterminer le VS30 sur 30 mètres de profondeur ;</li><li>Modélisation numérique 1D (SHAKE, STRATA) des colonnes de sol représentatives.</li></ul> Ces données permettent d'ajuster le spectre de réponse au droit de chaque projet, une étape indispensable pour les cimentations sismiques adaptées au contexte local.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Image technique — Angers</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Considérations locales</h2><p>Un projet de résidence de 8 étages avenue Jeanne d'Arc, à deux pas de la Maine, a récemment mis en lumière l'importance de l'analyse d'amplification sismique à Angers. Sans étude préalable, le dimensionnement initial sous-estimait l'accélération en surface de près de 30 %. L'analyse a révélé une fréquence de résonance à 3,2 Hz, coïncidant avec la fréquence propre du bâtiment. Le recalcul a nécessité un renforcement des voiles et des <a href="/fondations/">fondations</a>, soit un surcoût maîtrisé de 5 % du gros œuvre, bien inférieur au risque de désordres structurels en cas de séisme modéré.</p></div></section>
     <section class="block mid-cta-bf9e-bf9e" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EA580C15,#EA580C08);border-left:4px solid #EA580C;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Besoin d'une évaluation géotechnique ?</h3>
