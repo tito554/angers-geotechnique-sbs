@@ -138,7 +138,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -150,6 +150,62 @@ body>*{max-width:100vw}
   .navbar{flex-wrap:wrap}
 }
 </style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -158,8 +214,7 @@ body>*{max-width:100vw}
     </div>
     <div class="nav">
         <div class="nav-item has-dd"><a href="../exploration/" class="nav-cat-link">Exploration</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../puits-dexploration/">Fouille d'essai (Puits d'exploration)</a><a href="../standard-penetration-test/">Essai SPT (Standard Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="../essais-in-situ/" class="nav-cat-link">Essais in situ</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../densite-site/">Essai de densité sur site (méthode du cône de sable)</a><a href="../au-dilatometre-plat/">Essai au dilatomètre plat (DMT)</a><a href="../pressiometrique-menard/">Essai pressiométrique Ménard</a><a href="../cisaillement-au-scissometre-chantier/">Essai de cisaillement au scissomètre de chantier (Vane Shear Test)</a></div></div><div class="nav-item has-dd"><a href="../laboratoire/" class="nav-cat-link">Laboratoire</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../caracterisation-sols-residuels/">Caractérisation des sols résiduels</a><a href="../classification-sols/">Classification des sols (USCS/AASHTO)</a><a href="../etude-mecanique-sols/">Étude de mécanique des sols</a><a href="../limites-datterberg/">Limites d'Atterberg</a></div></div><div class="nav-item has-dd"><a href="../geophysique/" class="nav-cat-link">Géophysique</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../vitesse-ondes-cisaillement/">MASW / VS30 (vitesse des ondes de cisaillement)</a><a href="../microtremblements-hvsr/">Microtremblements HVSR (Méthode Nakamura)</a><a href="../tomographie-sismique/">Tomographie sismique (réfraction/réflexion)</a></div></div><div class="nav-item has-dd"><a href="../fondations/" class="nav-cat-link">Fondations</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../analyse-tassement-differentiel/">Analyse de tassement différentiel</a><a href="../conception-fondations-superficielles/">Conception de fondations superficielles</a><a href="../conception-fondations-parasismiques/">Conception de fondations parasismiques</a><a href="../conception-fondations-pieux/">Conception de fondations sur pieux</a><a href="../conception-micropieux/">Conception de micropieux</a><a href="../evaluation-sols-affaissables/">Évaluation des sols affaissables</a></div></div><div class="nav-item has-dd"><a href="../pentes-et-murs/" class="nav-cat-link">Pentes et murs</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../analyse-lerosion-sols/">Analyse de l'érosion des sols</a><a href="../analyse-stabilite-pentes/">Analyse de stabilité des pentes</a><a href="../conception-murs-soutenement/">Conception de murs de soutènement</a><a href="../conception-rideaux-palplanches/">Conception de rideaux de palplanches</a></div></div><div class="nav-item has-dd"><a href="../amelioration/" class="nav-cat-link">Amélioration</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../conception-deep-soil-mixing/">Conception de Deep Soil Mixing (DSM)</a><a href="../conception-drains-verticaux-prefabriques/">Conception de drains verticaux préfabriqués</a></div></div><div class="nav-item has-dd"><a href="../excavations-souterraines/" class="nav-cat-link">Excavations</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../analyse-geotechnique-tunnels-sols/">Analyse géotechnique pour tunnels en sols mous</a></div></div><div class="nav-item has-dd"><a href="../geotechnique-routiere/" class="nav-cat-link">Routier</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../conception-chaussees-souples/">Conception de chaussées souples</a><a href="../conception-chaussees-rigides/">Conception de chaussées rigides</a><a href="../conception-plate-forme-routiere/">Conception de plate-forme routière</a><a href="../conception-chaussee-plate-forme/">Routier (conception chaussée/plate-forme)</a></div></div><div class="nav-item has-dd"><a href="../sismique/" class="nav-cat-link">Sismique</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../analyse-damplification-sismique/">Analyse d'amplification sismique</a><a href="../conception-disolation-sismique-a/">Conception d'isolation sismique à la base</a></div></div>
-        <a class="nav-contact-btn" href="mailto:contact@geotechnique.sbs">INQUIRE</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -169,12 +224,10 @@ body>*{max-width:100vw}
     <a class="hero-cta" href="#main-content">EN SAVOIR PLUS</a>
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/limites-atterberg-4.webp" alt="Laboratoire à Angers" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/limites-atterberg-1.webp" alt="Laboratoire à Angers" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Notre laboratoire géotechnique basé à Angers intervient en appui des reconnaissances de terrain pour qualifier avec précision les sols du Maine‑et‑Loire, souvent marqués par les alluvions de la Maine, les altérites du Massif armoricain et les formations schisto‑gréseuses. Nous y exécutons l’ensemble des essais physiques et mécaniques exigés par la norme NF P 94‑500, qu’il s’agisse d’identifier un sol fin, de mesurer la résistance d’un sable ligérien ou d’évaluer le potentiel de retrait‑gonflement des argiles. Cette capacité analytique complète directement nos <a href="/exploration/">reconnaissances de terrain</a> et nos <a href="/essais-in-situ/">essais in situ</a>, garantissant une chaîne d’information cohérente depuis le prélèvement jusqu’au rapport.</p>
 <p>Chaque campagne d’essais est conduite selon les référentiels français en vigueur, en particulier les normes NF EN ISO 17892 pour les essais physiques et les normes NF P 94‑071 à 94‑078 pour le cisaillement et l’œdomètre. Les paramètres mesurés – teneur en eau, limites d’Atterberg, granulométrie, cohésion non drainée, angle de frottement ou encore compressibilité – sont systématiquement corrélés aux résultats de nos <a href="/standard-penetration-test/">essais SPT</a> et de nos <a href="/pressiometrique-menard/">essais pressiométriques Ménard</a> réalisés sur site. Ce couplage permet d’affiner les modèles de comportement mécanique, notamment pour les sols intermédiaires où les corrélations classiques trouvent leurs limites sans un calage expérimental rigoureux.</p>
 <p>Dans l’agglomération angevine, notre laboratoire est régulièrement mobilisé pour des projets de requalification de friches industrielles en bord de Maine, des extensions de zones pavillonnaires sur les coteaux schisteux ou encore des fondations d’ouvrages hydrauliques dans les alluvions récentes. La variabilité spatiale des formations superficielles, notamment les poches d’argiles de désagrégation et les arènes granitiques, impose une caractérisation fine que seule une campagne d’essais en laboratoire bien dimensionnée peut fournir. Nous intégrons aussi les exigences spécifiques des études de <a href="/caracterisation-sols-residuels/">caractérisation des sols résiduels</a>, fréquents sur les plateaux altérés du Segréen.</p>
-<img src="/img/limites-atterberg-1.webp" alt="Laboratoire à Angers" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>À réception des échantillons intacts ou remaniés, nous définissons un programme d’essais adapté à la nature du sol et aux sollicitations de l’ouvrage, puis nous produisons un rapport d’essais complet intégrant les feuilles de calcul, les courbes d’évolution et une synthèse interprétative. Ce livrable, directement exploitable par les bureaux d’études de structure, constitue le socle fiable pour dimensionner des fondations superficielles ou profondes en conformité avec l’Eurocode 7 et les règles professionnelles de l’USG. En confiant vos analyses à notre laboratoire d’Angers, vous sécurisez vos projets par une connaissance approfondie du comportement réel des terrains, au plus près des conditions locales.</</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Services disponibles</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../caracterisation-sols-residuels/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Caractérisation des sols résiduels</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../classification-sols/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Classification des sols (USCS/AASHTO)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../etude-mecanique-sols/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Étude de mécanique des sols</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../limites-datterberg/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Limites d'Atterberg</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
 <section class="block mid-cta-bf9e-bf9e" style="padding:2rem 0">
@@ -204,7 +257,7 @@ body>*{max-width:100vw}
     if(!el)return;
     var map=L.map(el).setView([47.4739884,-0.5515588],12);
     L.tileLayer('https://{s}.tile-bf9e.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
-    L.marker([47.4739884,-0.5515588],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Angers").openPopup();
+    L.marker([47.4739884,-0.5515588],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(map).bindPopup("Angers").openPopup();
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 })();
@@ -224,7 +277,7 @@ body>*{max-width:100vw}
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([47.4739884,-0.5515588],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Angers");
+          L.marker([47.4739884,-0.5515588],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m).bindPopup("Angers");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
